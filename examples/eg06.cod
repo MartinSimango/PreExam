@@ -1,0 +1,44 @@
+ASSEM
+BEGIN
+  {    0 } FHDR    
+  {    1 } CALL     4
+  {    3 } HALT    
+  {    4 } DSP      3
+  {    6 } LDA      5
+  {    8 } LDC      0
+  {   10 } STO     
+  {   11 } LDA      6
+  {   13 } LDA      5
+  {   15 } LDV     
+  {   16 } STO     
+  {   17 } PRNS     "What is your name? "
+  {   19 } LDA      4
+  {   21 } INPS    
+  {   22 } LDA      5
+  {   24 } LDV     
+  {   25 } PRNVS   
+  {   26 } PRNS     " is pleased to meet "
+  {   28 } LDA      4
+  {   30 } LDV     
+  {   31 } PRNVS   
+  {   32 } PRNL    
+  {   33 } LDA      5
+  {   35 } LDV     
+  {   36 } LDA      4
+  {   38 } LDV     
+  {   39 } SCEQ    
+  {   40 } BZE      45
+  {   42 } PRNS     "(Our names are the same)"
+  {   44 } PRNL    
+  {   45 } LDA      6
+  {   47 } LDV     
+  {   48 } UPP     
+  {   49 } LDA      4
+  {   51 } LDV     
+  {   52 } UPP     
+  {   53 } SCEQ    
+  {   54 } BZE      59
+  {   56 } PRNS     "(Our uppercased names are the same)"
+  {   58 } PRNL    
+  {   59 } RETV    
+END.

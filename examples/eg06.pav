@@ -1,0 +1,13 @@
+void main () { $C+  // eg06.pav
+// We must be able to compare strings for equality and convert them to upper case
+  string yourName, myName, theProf;
+  myName = "Karen";
+  theProf = myName;
+  read("What is your name? ", yourName);
+  writeLine(myName, " is pleased to meet ", yourName);
+  if (myName == yourName)
+    writeLine("(Our names are the same)");
+  if (upper(theProf) == upper(yourName))
+    writeLine("(Our uppercased names are the same)");
+}
+

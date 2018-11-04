@@ -1,0 +1,30 @@
+ASSEM
+BEGIN
+  {    0 } FHDR    
+  {    1 } CALL     4
+  {    3 } HALT    
+  {    4 } DSP      2
+  {    6 } LDA      4
+  {    8 } INPS    
+  {    9 } LDA      4
+  {   11 } LDV     
+  {   12 } UPP     
+  {   13 } PRNVS   
+  {   14 } PRNL    
+  {   15 } LDA      4
+  {   17 } LDV     
+  {   18 } PRNVS   
+  {   19 } PRNL    
+  {   20 } LDA      5
+  {   22 } LDA      4
+  {   24 } LDV     
+  {   25 } STO     
+  {   26 } LDA      4
+  {   28 } INPS    
+  {   29 } LDA      5
+  {   31 } LDV     
+  {   32 } PRNVS   
+  {   33 } PRNL    
+  {   34 } STACK   
+  {   35 } RETV    
+END.

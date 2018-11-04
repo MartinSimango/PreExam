@@ -1,0 +1,12 @@
+void main () { $C+ $D+  // eg10.pav
+// A bit of debugging help, perhaps.  Don't forget the stackdump pragma!
+  string s, t;
+  read(s);
+  writeLine(upper(s));
+  writeLine(s);
+  t = s;
+  read(s);
+  writeLine(t);
+  $SD
+}
+

@@ -1,0 +1,14 @@
+void main () { $C+  // eg11.pav
+// We must be able to catch some silly misteaks
+  string s = "Karen Bradshaw";
+  s++;  // Promotion at last?
+  int i;
+  read(s);
+  writeLine(Upper(s));
+  s = 3 * s;
+  s = - s;
+  s = s + 2;
+  i = s;
+  writeLine(s, "s");
+}
+

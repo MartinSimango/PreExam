@@ -1,0 +1,12 @@
+void main () { $C+  // eg08.pav
+// Some silly assignments
+  string greeting = "hello", world = "world";
+  greeting = world;
+  read("Supply planet ", world);
+  writeLine(greeting);
+  writeLine(world);
+  world = greeting;
+  writeLine(greeting);
+  writeLine(world);
+}
+

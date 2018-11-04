@@ -1,0 +1,167 @@
+// Test examples for Sunday -- exam 2018
+
+// eg00.pav
+void main () { $C+  
+// We must be able to use strings in read and write statements as before
+  int i;
+  read("Supply a value for i " , i);
+  write("The value you supplied was ", i);
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg01.pav
+void main () { $C+  
+// We must be able to use strings and general expressions in write statements
+  int age;
+  read("Hello - how old are you? ", age);
+  writeLine("You must have been born in about", 2018 - age);
+  writeLine("Any claim that you are an octogenarian is clearly ", age > 80);
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg02.pav
+void main () { $C+  
+// We must be able to read and write strings
+  string name;
+  read("Hello - what is your name? ", name);
+  write("It's nice to meet you, ", name);
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg03.pav
+void main () { $C+  
+// We must be able to assign strings to variables
+  string formerHero, despot;
+  formerHero = "Uncle Bob";
+  writeLine(formerHero, " is old, and almost senile");
+  despot = formerHero;
+  writeLine("Even a tyrant like ", despot, " will die eventually");
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg04.pav
+void main () { $C+  
+// We must be able to declare string variables in nested blocks
+  string formerHero;
+  formerHero = "Uncle Bob";
+  writeLine(formerHero, " is old, and almost senile");
+  if (true) {
+    string despot = formerHero;
+    writeLine("Even a tyrant like ", despot, " will die eventually");
+  }
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg05.pav
+void main () { $C+  
+// We must be able to assign strings to variables
+  string yourName, myName;
+  myName = "Karen";
+  read("What is your name? ", yourName);
+  write(myName, " is pleased to meet ", yourName);
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg06.pav
+void main () { $C+  
+// We must be able to compare strings for equality and convert them to upper case
+  string yourName, myName, theProf;
+  myName = "Karen";
+  theProf = myName;
+  read("What is your name? ", yourName);
+  writeLine(myName, " is pleased to meet ", yourName);
+  if (myName == yourName)
+    writeLine("(Our names are the same)");
+  if (upper(theProf) == upper(yourName))
+    writeLine("(Our uppercased names are the same)");
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg07.pav
+void main () { $C+  
+// We must be able to read and store a list of brilliant students in an array of strings
+
+  string[] cs301 = new string[5];
+  int i = 0;
+  while (i < 5) {
+    read(cs301[i]);
+    i++;
+  }
+  i = 0;
+  while (i < 5) {
+    writeLine(i, "\t", cs301[i]);
+    i++;
+  }
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg08.pav
+void main () { $C+  
+// Some silly assignments
+  string greeting = "hello", world = "world";
+  greeting = world;
+  read("Supply planet ", world);
+  writeLine(greeting);
+  writeLine(world);
+  world = greeting;
+  writeLine(greeting);
+  writeLine(world);
+}
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg09.pav
+void main () { $C+  
+// Some arb code with some arb strings!
+  string g = "gee", h = "aitch";
+  writeLine("g= ", g, " h= ", h);
+  g = h;
+  h = g;
+  writeLine("g= ", g, " h= ", h);
+  h = upper(g);
+  writeLine("g= ", g, " h= ", h);
+  writeLine("g= ", upper(g), " h= ", upper(h));
+}
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg10.pav
+void main () { $C+ $D+  
+// A bit of debugging help, perhaps.  Don't forget the stackdump pragma!
+  string s, t;
+  read(s);
+  writeLine(upper(s));
+  writeLine(s);
+  t = s;
+  read(s);
+  writeLine(t);
+  $SD
+}
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// eg11.pav
+void main () { $C+  
+// We must be able to catch some silly misteaks
+  string s = "Karen Bradshaw";
+  s++;  // Promotion at last?
+  int i;
+  read(s);
+  writeLine(Upper(s));
+  s = 3 * s;
+  s = - s;
+  s = s + 2;
+  i = s;
+  writeLine(s, "s");
+}
+

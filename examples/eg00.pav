@@ -1,0 +1,17 @@
+void main () { $C+  // eg00.pav
+// We must be able to use strings in read and write statements as before
+ /* int i;
+  read("Supply a value for i " , i);
+  write("The value you supplied was ", i);
+  string h = "hello world";*/
+  string b="bye";
+  string g;
+  write(upper(b));*/
+  write("h""=="h")
+
+  
+  
+  
+  string[] n= new string[21];*/
+}
+

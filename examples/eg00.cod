@@ -1,0 +1,15 @@
+ASSEM
+BEGIN
+  {    0 } FHDR    
+  {    1 } CALL     4
+  {    3 } HALT    
+  {    4 } DSP      1
+  {    6 } PRNS     "Supply a value for i "
+  {    8 } LDA      4
+  {   10 } INPI    
+  {   11 } PRNS     "The value you supplied was "
+  {   13 } LDA      4
+  {   15 } LDV     
+  {   16 } PRNI    
+  {   17 } RETV    
+END.

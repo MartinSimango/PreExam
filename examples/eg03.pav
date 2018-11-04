@@ -1,0 +1,9 @@
+void main () { $C+  // eg03.pav
+// We must be able to assign strings to variables
+  string formerHero, despot;
+  formerHero = "Uncle Bob";
+  writeLine(formerHero, " is old, and almost senile");
+  despot = formerHero;
+  writeLine("Even a tyrant like ", despot, " will die eventually");
+}
+

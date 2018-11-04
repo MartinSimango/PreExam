@@ -1,0 +1,9 @@
+void main () { $C+  // ifelse2.pav
+// if-then-else
+  int a, b, c, d;
+  if (a == 1) { c = d; }
+  if (a == 1) { string s; }
+  if (a == 1) {} else { string s; }
+  if (a == 1) {} else { b = 1; }
+}
+

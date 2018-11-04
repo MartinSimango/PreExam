@@ -1,0 +1,8 @@
+void main () { $C+  // eg05.pav
+// We must be able to assign strings to variables
+  string yourName, myName;
+  myName = "Karen";
+  read("What is your name? ", yourName);
+  write(myName, " is pleased to meet ", yourName);
+}
+

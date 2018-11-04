@@ -1,0 +1,8 @@
+void main () { $C+  // eg01.pav
+// We must be able to use strings and general expressions in write statements
+  int age;
+  read("Hello - how old are you? ", age);
+  writeLine("You must have been born in about", 2018 - age);
+  writeLine("Any claim that you are an octogenarian is clearly ", age > 80);
+}
+

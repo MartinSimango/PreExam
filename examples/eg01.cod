@@ -1,0 +1,25 @@
+ASSEM
+BEGIN
+  {    0 } FHDR    
+  {    1 } CALL     4
+  {    3 } HALT    
+  {    4 } DSP      1
+  {    6 } PRNS     "Hello - how old are you? "
+  {    8 } LDA      4
+  {   10 } INPI    
+  {   11 } PRNS     "You must have been born in about"
+  {   13 } LDC      2018
+  {   15 } LDA      4
+  {   17 } LDV     
+  {   18 } SUB     
+  {   19 } PRNI    
+  {   20 } PRNL    
+  {   21 } PRNS     "Any claim that you are an octogenarian is clearly "
+  {   23 } LDA      4
+  {   25 } LDV     
+  {   26 } LDC      80
+  {   28 } CGT     
+  {   29 } PRNB    
+  {   30 } PRNL    
+  {   31 } RETV    
+END.

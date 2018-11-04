@@ -1,0 +1,65 @@
+ASSEM
+BEGIN
+  {    0 } FHDR    
+  {    1 } CALL     4
+  {    3 } HALT    
+  {    4 } DSP      2
+  {    6 } LDA      4
+  {    8 } LDC      0
+  {   10 } STO     
+  {   11 } LDA      5
+  {   13 } LDC      1
+  {   15 } STO     
+  {   16 } PRNS     "g= "
+  {   18 } LDA      4
+  {   20 } LDV     
+  {   21 } PRNVS   
+  {   22 } PRNS     " h= "
+  {   24 } LDA      5
+  {   26 } LDV     
+  {   27 } PRNVS   
+  {   28 } PRNL    
+  {   29 } LDA      4
+  {   31 } LDA      5
+  {   33 } LDV     
+  {   34 } STO     
+  {   35 } LDA      5
+  {   37 } LDA      4
+  {   39 } LDV     
+  {   40 } STO     
+  {   41 } PRNS     "g= "
+  {   43 } LDA      4
+  {   45 } LDV     
+  {   46 } PRNVS   
+  {   47 } PRNS     " h= "
+  {   49 } LDA      5
+  {   51 } LDV     
+  {   52 } PRNVS   
+  {   53 } PRNL    
+  {   54 } LDA      5
+  {   56 } LDA      4
+  {   58 } LDV     
+  {   59 } UPP     
+  {   60 } STO     
+  {   61 } PRNS     "g= "
+  {   63 } LDA      4
+  {   65 } LDV     
+  {   66 } PRNVS   
+  {   67 } PRNS     " h= "
+  {   69 } LDA      5
+  {   71 } LDV     
+  {   72 } PRNVS   
+  {   73 } PRNL    
+  {   74 } PRNS     "g= "
+  {   76 } LDA      4
+  {   78 } LDV     
+  {   79 } UPP     
+  {   80 } PRNVS   
+  {   81 } PRNS     " h= "
+  {   83 } LDA      5
+  {   85 } LDV     
+  {   86 } UPP     
+  {   87 } PRNVS   
+  {   88 } PRNL    
+  {   89 } RETV    
+END.

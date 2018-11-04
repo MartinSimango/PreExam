@@ -1,0 +1,21 @@
+ PC:    0 FP: 8192 SP: 8192 HP:   30 TOS: ????  FHDR  
+ PC:    1 FP: 8192 SP: 8188 HP:   30 TOS: 8192  CALL        4
+ PC:    4 FP: 8192 SP: 8188 HP:   30 TOS: 8192  DSP         4
+ PC:    6 FP: 8192 SP: 8184 HP:   30 TOS:    0  LDA         4
+ PC:    8 FP: 8192 SP: 8183 HP:   30 TOS: 8187  LDC         0
+ PC:   10 FP: 8192 SP: 8182 HP:   30 TOS:    0  STO   
+ PC:   11 FP: 8192 SP: 8184 HP:   30 TOS:    0  LDA         5
+ PC:   13 FP: 8192 SP: 8183 HP:   30 TOS: 8186  LDC         1
+ PC:   15 FP: 8192 SP: 8182 HP:   30 TOS:    1  STO   
+ PC:   16 FP: 8192 SP: 8184 HP:   30 TOS:    0  LDA         4
+ PC:   18 FP: 8192 SP: 8183 HP:   30 TOS: 8187  LDV   
+ PC:   19 FP: 8192 SP: 8183 HP:   30 TOS:    0  LDC         2
+ PC:   21 FP: 8192 SP: 8182 HP:   30 TOS:    2  SCEQ  
+ PC:   22 FP: 8192 SP: 8184 HP:   30 TOS:    0  PRNB  
+                                                                 false 
+ PC:   23 FP: 8192 SP: 8185 HP:   30 TOS:    0  LDA         7
+ PC:   25 FP: 8192 SP: 8184 HP:   30 TOS: 8184  LDC        21
+ PC:   27 FP: 8192 SP: 8183 HP:   30 TOS:   21  ANEW  
+ PC:   28 FP: 8192 SP: 8183 HP:   52 TOS:   30  STO   
+ PC:   29 FP: 8192 SP: 8185 HP:   52 TOS:    0  RETV  
+ PC:    3 FP: 8192 SP: 8192 HP:   52 TOS: ????  HALT  

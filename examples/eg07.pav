@@ -1,0 +1,16 @@
+void main () { $C+  // eg07.pav
+// We must be able to read and store a list of brilliant students in an array of strings
+
+  string[] cs301 = new string[5];
+  int i = 0;
+  while (i < 5) {
+    read(cs301[i]);
+    i++;
+  }
+  i = 0;
+  while (i < 5) {
+    writeLine(i, "\t", cs301[i]);
+    i++;
+  }
+}
+

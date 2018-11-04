@@ -1,0 +1,12 @@
+void main () { $C+  // eg09.pav
+// Some arb code with some arb strings!
+  string g = "gee", h = "aitch";
+  writeLine("g= ", g, " h= ", h);
+  g = h;
+  h = g;
+  writeLine("g= ", g, " h= ", h);
+  h = upper(g);
+  writeLine("g= ", g, " h= ", h);
+  writeLine("g= ", upper(g), " h= ", upper(h));
+}
+

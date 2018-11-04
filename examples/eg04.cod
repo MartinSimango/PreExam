@@ -1,0 +1,28 @@
+ASSEM
+BEGIN
+  {    0 } FHDR    
+  {    1 } CALL     4
+  {    3 } HALT    
+  {    4 } DSP      2
+  {    6 } LDA      4
+  {    8 } LDC      0
+  {   10 } STO     
+  {   11 } LDA      4
+  {   13 } LDV     
+  {   14 } PRNVS   
+  {   15 } PRNS     " is old, and almost senile"
+  {   17 } PRNL    
+  {   18 } LDC      1
+  {   20 } BZE      37
+  {   22 } LDA      5
+  {   24 } LDA      4
+  {   26 } LDV     
+  {   27 } STO     
+  {   28 } PRNS     "Even a tyrant like "
+  {   30 } LDA      5
+  {   32 } LDV     
+  {   33 } PRNVS   
+  {   34 } PRNS     " will die eventually"
+  {   36 } PRNL    
+  {   37 } RETV    
+END.

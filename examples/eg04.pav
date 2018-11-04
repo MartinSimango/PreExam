@@ -1,0 +1,11 @@
+void main () { $C+  // eg04.pav
+// We must be able to declare string variables in nested blocks
+  string formerHero;
+  formerHero = "Uncle Bob";
+  writeLine(formerHero, " is old, and almost senile");
+  if (true) {
+    string despot = formerHero;
+    writeLine("Even a tyrant like ", despot, " will die eventually");
+  }
+}
+

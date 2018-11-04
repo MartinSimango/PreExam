@@ -1,0 +1,15 @@
+ASSEM
+BEGIN
+  {    0 } FHDR    
+  {    1 } CALL     4
+  {    3 } HALT    
+  {    4 } DSP      1
+  {    6 } PRNS     "Hello - what is your name? "
+  {    8 } LDA      4
+  {   10 } INPS    
+  {   11 } PRNS     "It\'s nice to meet you, "
+  {   13 } LDA      4
+  {   15 } LDV     
+  {   16 } PRNVS   
+  {   17 } RETV    
+END.
